@@ -99,6 +99,10 @@
     </li>
     
     <li class="">
+      <a href="https://isidorafuentes.github.io/docs/modelado-de-deposici%C3%B3n-fundida-fdm/">Mecanizado CNC</a>
+    </li>
+    
+    <li class="">
       <a href="https://isidorafuentes.github.io/docs/1.-mecanizado-cnc-silla-fresia/">1. Mecanizado CNC - Silla Fresia</a>
     </li>
     
@@ -146,47 +150,43 @@
   <!-- raw HTML omitted -->
 <h1 id="a-nametopaíndice"><!-- raw HTML omitted --><!-- raw HTML omitted -->índice</h1>
 <ul>
-<li><a href="#descripci%C3%B3n">Descripción</a></li>
-<li><a href="#desarrollo">Desarrollo</a></li>
-<li><a href="#modelos-moldes-en-3d">Modelos moldes en 3D</a></li>
+<li><a href="#introducci%C3%B3n">Introducción</a></li>
+<li><a href="#requisitos-b%C3%A1sicos-dise%C3%B1o-molde">Requisitos básicos diseño molde</a></li>
+<li><a href="#fase-1">Fase 1</a></li>
+<li><a href="#fase-2">Fase 2</a></li>
+<li><a href="#cura">CURA</a></li>
 </ul>
 <hr>
-<h1 id="proyecto-final">Proyecto Final</h1>
-<p><img src="/img/molde/1.jpg" alt="macetero"></p>
-<h2 id="descripción">Descripción</h2>
-<p>se debe experimentar</p>
+<h1 id="experimentación-de-moldes">Experimentación de moldes</h1>
+<h2 id="introducción">Introducción</h2>
+<p>Para el proyecto, cada integrante de grupo diseñó distintos modelos de recipiente con sus respectivos moldes para evaluar, junto con el profesor, cuál es el más conveniente para imprimir.</p>
+<p><img src="/img/planimetrias-molde/1.png" alt="molde"></p>
+<p>El diseño de piezas de plástico es una tarea compleja que involucra muchos factores que abordan una lista de requisitos de la aplicación. &ldquo;¿Cómo se va a utilizar la pieza?&rdquo; &ldquo;¿Cómo encaja con otras partes del ensamblaje?&rdquo; &ldquo;¿Qué cargas experimentará en uso?&rdquo; Además de los problemas funcionales y estructurales, los problemas de procesamiento juegan un papel importante en el diseño de una pieza de plástico moldeada por inyección. La forma en que el plástico fundido entra, se llena y se enfría dentro de la cavidad para formar la pieza determina en gran medida la forma que deben adoptar las características de esa pieza. El cumplimiento de algunas reglas básicas de diseño de piezas moldeadas por inyección dará como resultado una pieza que, además de ser más fácil de fabricar y ensamblar, normalmente será mucho más resistente en servicio. Dividir una pieza en grupos básicos nos ayudará a construir su pieza de manera lógica mientras minimiza los problemas de moldeado. A medida que se desarrolla una pieza, siempre hay que tener en cuenta cómo se moldea la pieza y qué puede hacer para minimizar el estrés.</p>
+<p><img src="/img/planimetrias-molde/2.jpg" alt="molde"></p>
 <p><a href="#top">[Volver Arriba]</a></p>
-<h2 id="desarrollo">Desarrollo</h2>
-<p>Como no sabíamos mucho del tema, investigamos respecto a los moldes 3D existentes para imprimir y llegamos diferentes resultados. Descubrimos que existían muchísimos tipos de moldes y que por lo mismo teníamos mucho espacio para experimentar</p>
-<p><img src="/img/molde/6.png" alt="molde">
-<br>
-<br>
-<img src="/img/molde/7.jpg" alt="molde">
-<br>
-<br>
-Luego, investigamos sobre las formas mismas de los maceteros, y nos encontramos con un sistema que nos llamó mucho la atención;</p>
-<h6 id="contenedor-de-regadío-o-sip"><strong>Contenedor de regadío o SIP</strong></h6>
-<p><img src="/img/molde/sip.png" alt="molde"></p>
-<p>Una sembradora de sub-riego (SIP) es una técnica de riego en contenedor en la que se suministra agua al cultivo desde el fondo, se almacena en un depósito lleno de medio saturado debajo de un suelo no saturado y luego se entrega por acción capilar a la zona de la raíz. El objetivo de este estudio fue optimizar la gestión del agua y evaluar el rendimiento de esta técnica en términos de eficiencia del uso del agua, humedad del suelo y distribución de solutos en comparación con el riego superficial en un invernadero mediterráneo.</p>
-<p>Nos <strong>encantó</strong> la premisa de esta técnica, ya que abarca un tema fundamental de la plantación que es la pérdida innecesaria de agua o mal aprovechamiento de ella.</p>
-<p>Descubrimos que existen maneras más &ldquo;arcaicas&rdquo; de crear y utilizar esta técnica, sin necesidad de comprar un aparato a parte. A continuación, se muestra cómo hacerlo a partir de botellas de plástico:</p>
-<h4 id="opción-1">Opción 1</h4>
-<p><br>
-<br>
-<img src="/img/molde/sip1.jpg" alt="molde"></p>
-<h4 id="opción-2">Opción 2</h4>
-<p><br>
-<br>
-<img src="/img/molde/sip3.png" alt="molde"></p>
-<p>También, está la posibilidad de hacerlo con dos vasos de distinto tamaño, una bombilla y una tapita, como vemos a continuación:
-<br>
-<br>
-<img src="/img/molde/sip4.png" alt="molde"></p>
-<p>Queremos seguir investigando y desarrollando este tipo de proyecto y crear un molde que cumpla y permita esta técnica.</p>
-<p>A pesar de lo anterior, nuestro proceso en primera instancia se basó en simplemente modelar diferentes tipos de moldes y maceteros para así obtener un feedback con respecto a los aspectos técnicos de estos.
-Para eso, cada integrante del grupo realizó un modelo diferente, los cuales veremos en el siguiente punto.</p>
+<h2 id="requisitos-básicos-diseño-molde">Requisitos básicos diseño molde</h2>
+<ol>
+<li>Al diseñar el molde para la impresión SLA, asegúrese de que las caras internas del molde estén orientadas de manera que ningún soporte esté en contacto con ellas. Esto mejorará la calidad de su superficie, ya que no se presentarán marcas de soporte en estas superficies, minimizando el posprocesamiento requerido.</li>
+<li>Incluir salidas de aire poco profundas (0.05 mm de profundidad) desde el borde de la cavidad hasta el borde del molde ayudará a expulsar el aire atrapado durante el proceso de moldeo.</li>
+<li>Si el molde impreso en 3D se va a utilizar para más de 20 corridas, considere incluir canales en el diseño para incrustar tubos o varillas de metal. Estos pueden ayudar a reforzar el molde, reducir la deformación y mejorar los tiempos de enfriamiento.</li>
+<li>La impresión 3D del molde a una altura de capa más baja puede ayudar a producir piezas moldeadas más suaves ya que los moldes tendrán líneas de impresión menos visibles.</li>
+<li>Los detalles en relieve y grabados deben separarse de la superficie al menos 1 mm.</li>
+<li>Las restricciones específicas de diseño dependerán de la máquina de moldeo por inyección que se utilice. Sin embargo, Stratasys sugiere que los moldes hechos a través de sus impresoras de inyección de material se deben utilizar para producir piezas con un volumen máximo de 165 cm3 en máquinas de moldeo de 50 a 80 toneladas o prensas manuales.</li>
+</ol>
+<p><img src="/img/planimetrias-molde/4.jpg" alt="molde"></p>
+<h4 id="diseño-de-piezas-para-moldeo-por-inyección">Diseño de piezas para moldeo por inyección</h4>
+<p>Al igual que con los moldes de inyección convencionales, un diseñador debe considerar:</p>
+<ul>
+<li>Agregar un ángulo de desmoldeo de mínimo 20 grados para ayudar en la remoción de la pieza del molde.</li>
+<li>Mantener un espesor de pared uniforme en toda la pieza.</li>
+<li>Mantener todas las paredes y características lo más delgadas posible.</li>
+<li>Incluyendo radios en todos los bordes y esquinas.</li>
+<li>Incluyendo nervios delgados y refuerzos para agregar resistencia a una pieza en lugar de aumentar el grosor de la pared.</li>
+</ul>
+<p><img src="/img/planimetrias-molde/3.png" alt="molde"></p>
 <p><a href="#top">[Volver Arriba]</a></p>
-<h2 id="modelos-moldes-en-3d">Modelos moldes en 3D</h2>
+<h2 id="fase-1">Fase 1</h2>
+<p>En esta fase, en la cual nos familiarzamos por primera vez con el diseño de moldes, cada integrante realizó su propia propuesta de modelo.</p>
 <h3 id="propuesta-número-1">Propuesta número 1</h3>
 <p><br>
 <br>
@@ -210,14 +210,190 @@ Para eso, cada integrante del grupo realizó un modelo diferente, los cuales ver
 <h3 id="propuesta-número-3">Propuesta número 3</h3>
 <p><br>
 <br>
-<img src="/img/planimetrias-molde/miche.png" alt="macetero"></p>
+<img src="/img/planimetrias-molde/miche.png" alt="macetero">
+<br>
+<br>
+Durante la revisión de estos modelos por parte del profesor, llegamos a la conclusión de que la propuesta número 1 era la más adecuada para imprimir, ya que, en teoría, cumplía con los requisitos necesarios para una impresión válida y eficiente.</p>
+<p>Sin embargo, y como comentamos en posts anteriores, nos decidimos por perseguir un diseño distinto, el cual permitiera el regadío sub irrigado.</p>
+<p>Por lo mismo, continuamos nuestra experimentación, desarrollada en la siguiente fase</p>
 <p><a href="#top">[Volver Arriba]</a></p>
-<h2 id="galería">Galería</h2>
+<h2 id="fase-2">Fase 2</h2>
+<p>En esta segunda fase, nos enfocamos en diseñar moldes que cumplieran con las bases del sistema de regado sub.irragado, explicado en el post principal del Proyecto Final.
+Continuámos con la misma metodología, la cual consistió en realizar 3 propuestas como grupo, las cuales serán expuestas a continuación.</p>
+<h3 id="propuesta-número-4">Propuesta número 4</h3>
+<p><br>
+<br>
+<img src="/img/planimetrias-molde/coso1.png" alt="molde">
+<br>
+<br>
+<img src="/img/planimetrias-molde/coso2.png" alt="molde">
+<br>
+<br>
+<img src="/img/planimetrias-molde/coso3.png" alt="molde">
+<br>
+<br>
+<img src="/img/planimetrias-molde/isi3.jpeg" alt="molde">
+<br>
+<br>
+<img src="/img/planimetrias-molde/isi4.jpeg" alt="molde">
+<br>
+<br>
+<img src="/img/planimetrias-molde/isi5.jpeg" alt="molde">
+<br>
+<br>
+Para este modelo, nos fue posible plasmar sus planimetrías, ya que las partes de cavidad y núcleo no estaban unidas entre sí. Por suspuesto,a pesar de su llamativa estética, eliminamos esta opción luego de la apropiada reflexión.</p>
+<h3 id="propuesta-número-5">Propuesta número 5</h3>
+<p><br>
+<br>
+<img src="/img/planimetrias-molde/nadeem4.png" alt="macetero">
+<br>
+<br>
+<img src="/img/planimetrias-molde/nadeem5.png" alt="macetero">
+<br>
+<br>
+<img src="/img/planimetrias-molde/nadeem6.png" alt="macetero">
+<br>
+<br>
+Este molde tiene un diseño único, que eventualmente podría funcionar. Sin embargo, no se justificaba para la finalidad de este proyecto ya que necesitaría de mucho material para realizarse y unos arreglos que tendríamos que dedicarle una mayor cantidad de tiempo</p>
+<h3 id="propuesta-número-6">Propuesta número 6</h3>
+<p><br>
+<br>
+<img src="/img/planimetrias-molde/miche3.png" alt="molde">
+<br>
+<br>
+<img src="/img/planimetrias-molde/miche4.png" alt="molde">
+<br>
+<br>
+Finalmente, nos decidimos por este modelo. Además de que cumple con todos los requisitos de sacado necesarios, representa perfectamente nuestra intención y el sistema buscado debería funcionar eficientemente.</p>
+<p>Durante la revisión de estos modelos por parte del profesor, llegamos a la conclusión de que la propuesta número 1 era la más adecuada para imprimir, ya que, en teoría, cumplía con los requisitos necesarios para una impresión válida y eficiente.</p>
+<p>Sin embargo, y como comentamos en posts anteriores, nos decidimos por perseguir un diseño distinto, el cual permitiera el regadío sub irrigado.</p>
+<p>Por lo mismo, continuamos nuestra experimentación, desarrollada en la siguiente fase</p>
+<h3 id="renders-propuesta-final">Renders propuesta final</h3>
+<p>Para una mejor visualización, renderizamos la propesta escogida.</p>
+<p><br>
+<br>
+<img src="/img/planimetrias-molde/mac1.png" alt="molde">
+<br>
+<br>
+<img src="/img/planimetrias-molde/mac2.png" alt="molde">
+<br>
+<br>
+<img src="/img/planimetrias-molde/mac3.png" alt="molde">
+<br>
+<br>
+<img src="/img/planimetrias-molde/mac4.png" alt="molde"></p>
+<p><a href="#top">[Volver Arriba]</a></p>
+<h2 id="cura">CURA</h2>
+<p>Cada integrante del equipo se descargó la aplicación CURA y vimos el tutorial en conjunto. Seleccionamos la propuesta óptima (propuesta número 6) y la importamos al programa. En un principio, tuvimos el problema de que el modelo era un poco pequeño, por lo que tuvimos que escalarlo. Quedó bien, pero como nuesto modelo necesita de 4 moldes, nos pasamos un poco del gramaje. Por ello, le bajamos la densidad a la mitad y ahí nos resultó. Sin embargo, queremos el feedback del profesor para ver si es posible realizarlo de esa manera.</p>
+<p><img src="/img/planimetrias-molde/cora1.jpeg" alt="molde">
+<br>
+<br>
+<img src="/img/planimetrias-molde/cora2.jpeg" alt="molde"></p>
+<p><a href="#top">[Volver Arriba]</a></p>
 <p><strong>Selcciona y desliza</strong></p>
 <p>
 <link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
 
 <div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://isidorafuentes.github.io//img/planimetrias-molde//1.png');" >
+				      <img itemprop="thumbnail" src="https://isidorafuentes.github.io//img/planimetrias-molde//1.png" alt="1st" />
+				    </div>
+			      <figcaption>
+		          <p>1st</p>
+			      </figcaption>
+				    <a href="https://isidorafuentes.github.io//img/planimetrias-molde//1.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://isidorafuentes.github.io//img/planimetrias-molde//2.jpg');" >
+				      <img itemprop="thumbnail" src="https://isidorafuentes.github.io//img/planimetrias-molde//2.jpg" alt="2nd" />
+				    </div>
+			      <figcaption>
+		          <p>2nd</p>
+			      </figcaption>
+				    <a href="https://isidorafuentes.github.io//img/planimetrias-molde//2.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://isidorafuentes.github.io//img/planimetrias-molde//3.png');" >
+				      <img itemprop="thumbnail" src="https://isidorafuentes.github.io//img/planimetrias-molde//3.png" alt="3rd" />
+				    </div>
+			      <figcaption>
+		          <p>3rd</p>
+			      </figcaption>
+				    <a href="https://isidorafuentes.github.io//img/planimetrias-molde//3.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://isidorafuentes.github.io//img/planimetrias-molde//4.jpg');" >
+				      <img itemprop="thumbnail" src="https://isidorafuentes.github.io//img/planimetrias-molde//4.jpg" alt="4th" />
+				    </div>
+			      <figcaption>
+		          <p>4th</p>
+			      </figcaption>
+				    <a href="https://isidorafuentes.github.io//img/planimetrias-molde//4.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://isidorafuentes.github.io//img/planimetrias-molde//cora1.jpeg');" >
+				      <img itemprop="thumbnail" src="https://isidorafuentes.github.io//img/planimetrias-molde//cora1.jpeg" alt="Cora1" />
+				    </div>
+			      <figcaption>
+		          <p>Cora1</p>
+			      </figcaption>
+				    <a href="https://isidorafuentes.github.io//img/planimetrias-molde//cora1.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://isidorafuentes.github.io//img/planimetrias-molde//cora2.jpeg');" >
+				      <img itemprop="thumbnail" src="https://isidorafuentes.github.io//img/planimetrias-molde//cora2.jpeg" alt="Cora2" />
+				    </div>
+			      <figcaption>
+		          <p>Cora2</p>
+			      </figcaption>
+				    <a href="https://isidorafuentes.github.io//img/planimetrias-molde//cora2.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://isidorafuentes.github.io//img/planimetrias-molde//coso1.png');" >
+				      <img itemprop="thumbnail" src="https://isidorafuentes.github.io//img/planimetrias-molde//coso1.png" alt="Coso1" />
+				    </div>
+			      <figcaption>
+		          <p>Coso1</p>
+			      </figcaption>
+				    <a href="https://isidorafuentes.github.io//img/planimetrias-molde//coso1.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://isidorafuentes.github.io//img/planimetrias-molde//coso2.png');" >
+				      <img itemprop="thumbnail" src="https://isidorafuentes.github.io//img/planimetrias-molde//coso2.png" alt="Coso2" />
+				    </div>
+			      <figcaption>
+		          <p>Coso2</p>
+			      </figcaption>
+				    <a href="https://isidorafuentes.github.io//img/planimetrias-molde//coso2.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://isidorafuentes.github.io//img/planimetrias-molde//coso3.png');" >
+				      <img itemprop="thumbnail" src="https://isidorafuentes.github.io//img/planimetrias-molde//coso3.png" alt="Coso3" />
+				    </div>
+			      <figcaption>
+		          <p>Coso3</p>
+			      </figcaption>
+				    <a href="https://isidorafuentes.github.io//img/planimetrias-molde//coso3.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
 				    <div class="img" style="background-image: url('https://isidorafuentes.github.io//img/planimetrias-molde//isi.png');" >
@@ -253,6 +429,83 @@ Para eso, cada integrante del grupo realizó un modelo diferente, los cuales ver
 				</div>
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://isidorafuentes.github.io//img/planimetrias-molde//isi3.jpeg');" >
+				      <img itemprop="thumbnail" src="https://isidorafuentes.github.io//img/planimetrias-molde//isi3.jpeg" alt="Isi3" />
+				    </div>
+			      <figcaption>
+		          <p>Isi3</p>
+			      </figcaption>
+				    <a href="https://isidorafuentes.github.io//img/planimetrias-molde//isi3.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://isidorafuentes.github.io//img/planimetrias-molde//isi4.jpeg');" >
+				      <img itemprop="thumbnail" src="https://isidorafuentes.github.io//img/planimetrias-molde//isi4.jpeg" alt="Isi4" />
+				    </div>
+			      <figcaption>
+		          <p>Isi4</p>
+			      </figcaption>
+				    <a href="https://isidorafuentes.github.io//img/planimetrias-molde//isi4.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://isidorafuentes.github.io//img/planimetrias-molde//isi5.jpeg');" >
+				      <img itemprop="thumbnail" src="https://isidorafuentes.github.io//img/planimetrias-molde//isi5.jpeg" alt="Isi5" />
+				    </div>
+			      <figcaption>
+		          <p>Isi5</p>
+			      </figcaption>
+				    <a href="https://isidorafuentes.github.io//img/planimetrias-molde//isi5.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://isidorafuentes.github.io//img/planimetrias-molde//mac1.png');" >
+				      <img itemprop="thumbnail" src="https://isidorafuentes.github.io//img/planimetrias-molde//mac1.png" alt="Mac1" />
+				    </div>
+			      <figcaption>
+		          <p>Mac1</p>
+			      </figcaption>
+				    <a href="https://isidorafuentes.github.io//img/planimetrias-molde//mac1.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://isidorafuentes.github.io//img/planimetrias-molde//mac2.png');" >
+				      <img itemprop="thumbnail" src="https://isidorafuentes.github.io//img/planimetrias-molde//mac2.png" alt="Mac2" />
+				    </div>
+			      <figcaption>
+		          <p>Mac2</p>
+			      </figcaption>
+				    <a href="https://isidorafuentes.github.io//img/planimetrias-molde//mac2.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://isidorafuentes.github.io//img/planimetrias-molde//mac3.png');" >
+				      <img itemprop="thumbnail" src="https://isidorafuentes.github.io//img/planimetrias-molde//mac3.png" alt="Mac3" />
+				    </div>
+			      <figcaption>
+		          <p>Mac3</p>
+			      </figcaption>
+				    <a href="https://isidorafuentes.github.io//img/planimetrias-molde//mac3.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://isidorafuentes.github.io//img/planimetrias-molde//mac4.png');" >
+				      <img itemprop="thumbnail" src="https://isidorafuentes.github.io//img/planimetrias-molde//mac4.png" alt="Mac4" />
+				    </div>
+			      <figcaption>
+		          <p>Mac4</p>
+			      </figcaption>
+				    <a href="https://isidorafuentes.github.io//img/planimetrias-molde//mac4.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
 				    <div class="img" style="background-image: url('https://isidorafuentes.github.io//img/planimetrias-molde//miche.png');" >
 				      <img itemprop="thumbnail" src="https://isidorafuentes.github.io//img/planimetrias-molde//miche.png" alt="Miche" />
 				    </div>
@@ -282,6 +535,28 @@ Para eso, cada integrante del grupo realizó un modelo diferente, los cuales ver
 		          <p>Miche2</p>
 			      </figcaption>
 				    <a href="https://isidorafuentes.github.io//img/planimetrias-molde//miche2.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://isidorafuentes.github.io//img/planimetrias-molde//miche3.png');" >
+				      <img itemprop="thumbnail" src="https://isidorafuentes.github.io//img/planimetrias-molde//miche3.png" alt="Miche3" />
+				    </div>
+			      <figcaption>
+		          <p>Miche3</p>
+			      </figcaption>
+				    <a href="https://isidorafuentes.github.io//img/planimetrias-molde//miche3.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://isidorafuentes.github.io//img/planimetrias-molde//miche4.png');" >
+				      <img itemprop="thumbnail" src="https://isidorafuentes.github.io//img/planimetrias-molde//miche4.png" alt="Miche4" />
+				    </div>
+			      <figcaption>
+		          <p>Miche4</p>
+			      </figcaption>
+				    <a href="https://isidorafuentes.github.io//img/planimetrias-molde//miche4.png" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 				<div class="box">
@@ -326,6 +601,39 @@ Para eso, cada integrante del grupo realizó un modelo diferente, los cuales ver
 		          <p>Nadeem3</p>
 			      </figcaption>
 				    <a href="https://isidorafuentes.github.io//img/planimetrias-molde//nadeem3.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://isidorafuentes.github.io//img/planimetrias-molde//nadeem4.png');" >
+				      <img itemprop="thumbnail" src="https://isidorafuentes.github.io//img/planimetrias-molde//nadeem4.png" alt="Nadeem4" />
+				    </div>
+			      <figcaption>
+		          <p>Nadeem4</p>
+			      </figcaption>
+				    <a href="https://isidorafuentes.github.io//img/planimetrias-molde//nadeem4.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://isidorafuentes.github.io//img/planimetrias-molde//nadeem5.png');" >
+				      <img itemprop="thumbnail" src="https://isidorafuentes.github.io//img/planimetrias-molde//nadeem5.png" alt="Nadeem5" />
+				    </div>
+			      <figcaption>
+		          <p>Nadeem5</p>
+			      </figcaption>
+				    <a href="https://isidorafuentes.github.io//img/planimetrias-molde//nadeem5.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://isidorafuentes.github.io//img/planimetrias-molde//nadeem6.png');" >
+				      <img itemprop="thumbnail" src="https://isidorafuentes.github.io//img/planimetrias-molde//nadeem6.png" alt="Nadeem6" />
+				    </div>
+			      <figcaption>
+		          <p>Nadeem6</p>
+			      </figcaption>
+				    <a href="https://isidorafuentes.github.io//img/planimetrias-molde//nadeem6.png" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 </div>
