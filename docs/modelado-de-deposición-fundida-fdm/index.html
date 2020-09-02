@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Mecanizado CNC - Taller Fabricación Digital</title>
+  <title>Impresión 3D - Taller Fabricación Digital</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="icon" href="https://isidorafuentes.github.io/favicon.png">
@@ -98,10 +98,6 @@
       <a href="https://isidorafuentes.github.io/docs/mecanizado-cnc-descripci%C3%B3n/">Mecanizado CNC</a>
     </li>
     
-    <li class="active ">
-      <a href="https://isidorafuentes.github.io/docs/modelado-de-deposici%C3%B3n-fundida-fdm/">Mecanizado CNC</a>
-    </li>
-    
     <li class="">
       <a href="https://isidorafuentes.github.io/docs/1.-mecanizado-cnc-silla-fresia/">1. Mecanizado CNC - Silla Fresia</a>
     </li>
@@ -134,8 +130,8 @@
       <a href="https://isidorafuentes.github.io/docs/7.-proyecto-final-experimentaci%C3%B3n-materiales/">7. Proyecto Final - Experimentación de materiales</a>
     </li>
     
-    <li class="">
-      <a href="https://isidorafuentes.github.io/docs/markdown/">Ejemplos Markdown</a>
+    <li class="active ">
+      <a href="https://isidorafuentes.github.io/docs/modelado-de-deposici%C3%B3n-fundida-fdm/">Impresión 3D</a>
     </li>
     
   </ul>
@@ -145,112 +141,173 @@
         </div>
         <div class="col-12 col-md-9">
           
-<h1 class="title">Mecanizado CNC</h1>
+<h1 class="title">Impresión 3D</h1>
 <div class="content ">
   <!-- raw HTML omitted -->
 <h1 id="a-nametopaíndice"><!-- raw HTML omitted --><!-- raw HTML omitted -->índice</h1>
 <ul>
-<li><a href="#historia">Historia</a></li>
-<li><a href="#qu%C3%A9-es-y-c%C3%B3mo-funciona">¿Qué es y cómo funciona?</a></li>
-<li><a href="#operaciones-de-fresado">Operaciones de fresado</a></li>
-<li><a href="#fresadora-cnc---im%C3%A1genes">Fresadora CNC - Imágenes</a></li>
-<li><a href="#cosas-interesantes-que-se-pueden-crear-con-un-mecanizado-cnc">Cosas interesantes que se pueden crear con un mecanizado CNC</a></li>
+<li><a href="#impresi%C3%B3n-3D">Impresión 3D</a></li>
+<li><a href="#tipos-de-impresoras">Tipos de impresoras</a></li>
+<li><a href="#qu%C3%A9-es">FDM ¿Qué es?</a></li>
+<li><a href="#c%C3%B3mo-funciona">FDM ¿Cómo funciona?</a></li>
+<li><a href="#caracter%C3%ADsticas">FDM Características</a></li>
+<li><a href="#materiales">FDM Materiales</a></li>
+<li><a href="#qu%C3%A9-es">SLA ¿Qué es?</a></li>
+<li><a href="#c%C3%B3mo-funciona">SLA ¿Cómo funciona?</a></li>
+<li><a href="#caracter%C3%ADsticas">SLA Características</a></li>
+<li><a href="#materiales">SLA Materiales</a></li>
+<li><a href="#cosas-interesantes-que-se-pueden-crear-con-impresi%C3%B3n-3d">Cosas interesantes que se pueden crear con impresión 3D</a></li>
+<li><a href="#bibliograf%C3%ADa">Bibliografía</a></li>
 </ul>
 <hr>
-<h2 id="historia">Historia</h2>
-<p>El mecanizado CNC (control numérico computerizado) surgió en el año 1940 gracias a los trabajos realizados por el ingeniero estadounidense John T. Parsons, el cual utilizó unas tarjetas perforadas como sistema de coordenadas de posición para controlar un centro de máquinas. Ocho años después, este sistema fue presentado a las Fuerzas Aéreas de los EEUU para ser patrocinado en los laboratorios del Instituto de Tecnología de Massachussetts (MIT).</p>
-<p>Para el año 1952, el MIT creó el primero prototipo de una máquina CNC de mecanizado y, poco tiempo después, fue introducido en las fábricas de máquinas-herramientas para la producción de piezas metálicas, mientras seguían con su investigación para proporcionar al programador los medios necesarios para comunicar las instrucciones de mecanizado de piezas a la maquinaria de una forma más fácil.</p>
-<p><img src="/img/fotos_fresia/fresadora.jpg" alt="Fresadora"></p>
+<h2 id="imrpesión-3d">Imrpesión 3D</h2>
+<p><img src="/img/fdm/3d.jpg" alt="fdm"></p>
+<p>Cada impresora 3D construye piezas basándose en el mismo principio fundamental: un modelo digital se convierte en un objeto físico tridimensional agregando material una capa a la vez. De aquí proviene el término alternativo Fabricación aditiva.</p>
+<p>La impresión 3D es una forma fundamentalmente diferente de producir piezas en comparación con las tecnologías de fabricación tradicionales sustractivas (mecanizado CNC) o formativas (moldeo por inyección).</p>
+<p>En la impresión 3D, no se requieren herramientas especiales (por ejemplo, una herramienta de corte con cierta geometría o un molde). En cambio, la pieza se fabrica directamente sobre la plataforma construida capa por capa, lo que conduce a un conjunto único de ventajas y limitaciones.</p>
+<p><img src="/img/fdm/3d1.jpeg" alt="fdm"></p>
+<p>El proceso siempre comienza con un modelo digital en 3D: el plano del objeto físico. Este modelo es dividido por el software de la impresora en capas delgadas bidimensionales y luego convertido en un conjunto de instrucciones en lenguaje de máquina (código G) para que la impresora las ejecute.</p>
+<p>A partir de aquí, la forma en que funciona una impresora 3D varía según el proceso. Por ejemplo, las impresoras FDM de escritorio derriten filamentos de plástico y los colocan sobre la plataforma de impresión a través de una boquilla (como una pistola de pegamento de alta precisión controlada por computadora). Las grandes máquinas industriales SLS utilizan un láser para fundir (o sinterizar) capas delgadas de polvos de metal o plástico.</p>
+<p><img src="/img/fdm/3d2.gif" alt="fdm"></p>
+<p>Los materiales disponibles también varían según el proceso. Los plásticos son, con mucho, los más comunes, pero los metales también se pueden imprimir en 3D. Las piezas producidas también pueden tener una amplia gama de propiedades físicas específicas, que van desde objetos ópticamente transparentes hasta objetos similares al caucho.</p>
+<p>Según el tamaño de la pieza y el tipo de impresora, una impresión suele tardar entre 4 y 18 horas en completarse. Sin embargo, las piezas impresas en 3D rara vez están listas para usar fuera de la máquina. A menudo requieren algún procesamiento posterior para lograr el nivel deseado de acabado superficial. Estos pasos requieren tiempo adicional y esfuerzo (generalmente manual).</p>
 <p><a href="#top">[Volver Arriba]</a></p>
-<h2 id="qué-es-y-cómo-funciona">¿Qué es y cómo funciona?</h2>
-<p>En pocas palabras, el control numérico computarizado es el uso de una computadora para controlar y monitorear los movimientos de una máquina herramienta. Entre esas máquinas herramienta, tanto estáticas como portátiles, podemos mencionar: <strong>fresadora</strong>, torno, rectificadora, máquina de corte por láser, por chorro de agua o por electroerosión, estampadora, prensa, brazo robotizado, etc. Las máquinas de gran porte cuentan con una computadora dedicada que forma parte del equipo, y la mayoría dispone de un sofisticado sistema de realimentación que monitorea y ajusta constantemente la velocidad y posición de la herramienta de corte. Las máquinas menos exigentes usadas en talleres admiten el uso de una computadora personal externa. El controlador CNC trabaja en conjunto con una serie de motores (servomotores y/o motores paso a paso), así como componentes de accionamiento para desplazar los ejes de la máquina de manera controlada y ejecutar los movimientos programados.
-<br>
-<br>
-Se requiere un programa para operar la <strong>fresadora</strong>, programa que se puede generar manualmente o usando el software de Diseño asistido por computadora / Fabricación asistida por computadora (CAD / CAM).</p>
-<p>Una vez escrito el programa, donde se especifica lo que queremos, la fresadora hace prácticamente sola el trabajo de mecanizado de la pieza.</p>
-<p><img src="/img/fotos_fresia/cnc.gif" alt="Fresadora"></p>
-<p>Una máquina CNC, por lo tanto, consiste en seis elementos principales:</p>
-<ul>
-<li>Dispositivo de entrada</li>
-<li>Unidad de control o controlador</li>
-<li>Máquina herramienta</li>
-<li>Sistema de accionamiento</li>
-<li>Dispositivos de realimentación (sólo en sistemas con servomotores)</li>
-<li>Monitor
-<br>
-<br>
-La siguiente figura muestra un diagrama de bloques de una máquina CNC típica, provista de servomotores:</li>
-</ul>
-<p><img src="/img/fotos_fresia/mapa.gif" alt="Fresadora"></p>
+<h2 id="fdm-qué-es">FDM ¿Qué es?</h2>
+<p>El modelado por deposición fundida (FDM), o fabricación de filamentos fundidos (FFF), es un proceso de fabricación aditiva que pertenece a la familia de extrusión de materiales. En FDM, un objeto se construye depositando selectivamente material fundido en un camino predeterminado capa por capa. <strong>Los materiales utilizados son polímeros termoplásticos y vienen en forma de filamentos.</strong></p>
+<p><img src="/img/fdm/0.gif" alt="fdm"></p>
+<p>FDM es la tecnología de impresión 3D más utilizada: representa la base instalada más grande de impresoras 3D a nivel mundial y, a menudo, es la primera tecnología a la que están expuestas las personas. En este artículo, se presentan los principios básicos y los aspectos clave de la tecnología.</p>
+<p><img src="/img/fdm/1.png" alt="fdm"></p>
+<p>Un diseñador debe tener en cuenta las capacidades y limitaciones de la tecnología al fabricar una pieza con FDM, ya que esto lo ayudará a lograr el mejor resultado.</p>
 <p><a href="#top">[Volver Arriba]</a></p>
-<h2 id="operaciones-de-fresado">Operaciones de fresado</h2>
-<p>Especificamente, la máquina <strong>fresadora</strong> trabaja comunmente con 15 operaciones:</p>
-<p><strong>1.</strong> Fresado frontal</p>
-<p>Esta operación hace superficies planas en la cara de la pieza de trabajo. Esta operación de mecanizado se realiza en las superficies que son perpendiculares al eje de la cuchilla. La operación se realiza con la fresa frontal montada en el eje de la máquina.</p>
-<p><strong>2.</strong> Fresado lateral</p>
-<p>Es el proceso de mecanizado el que produce una superficie vertical plana en los lados de una pieza de trabajo. Esta operación se realiza utilizando una fresa de corte lateral.</p>
-<p><strong>3.</strong> Fresado plano</p>
-<p>Es un proceso de fresado de superficies planas manteniendo el eje del cortador paralelo a la superficie que se está fresando. También se llama fresado de superficie o fresado de losa. Una fresadora plana se usa para el fresado simple.</p>
-<p><strong>4.</strong> Fresado Straddle</p>
-<p>Es un proceso en el que se utilizan dos fresas laterales para mecanizar dos lados opuestos de una pieza de trabajo simultáneamente. La operación de fresado a horquilla se muestra en la figura que se proporciona a continuación.</p>
-<p><strong>5.</strong> Fresado angular</p>
-<p>Es un proceso de fresado de superficies planas que no son Paralelas ni perpendiculares al eje de la fresa. También se llama fresado de ángulo. Se utiliza una fresa de ángulo único para realizar esta operación.</p>
-<p><strong>6.</strong> Fresado de pandillas</p>
-<p>Es el proceso de mecanizado en el que dos o más fresas se utilizan juntas para realizar diferentes operaciones de fresado simultáneamente. En el fresado de pandillas, los cortadores están montados en el árbol.</p>
-<p><strong>7.</strong> Molienda de la forma</p>
-<p>Es el proceso de mecanizado de un contorno especial (contorno) compuesto por curvas, líneas rectas, o completamente de curvas, en un solo corte. Para realizar esta operación, se utilizan fresas formadas al contorno que se va a cortar. Esta operación se lleva a cabo utilizando fresas de redondeo convexas, cóncavas y de esquina.</p>
-<p><strong>8.</strong> Molienda de perfiles</p>
-<p>Esta operación de fresado se usa para cortar un perfil en la pieza de trabajo.</p>
-<p><strong>9.</strong> Fin de fresado</p>
-<p>Es el proceso de producir superficies planas que pueden ser horizontales, verticales y en cualquier ángulo teniendo como referencia la mesa de trabajo. Las fresas de extremo se usan para realizar esta operación.</p>
-<p><strong>10.</strong> Sierra de fresado</p>
-<p>Es un proceso de mecanizado que se utiliza para producir ranuras estrechas o ranuras en la pieza de trabajo. También se usa para dividir la pieza de trabajo en dos partes iguales o desiguales. Esta operación de fresado se realiza utilizando una fresa de sierra. El ancho de este cortador es muy inferior en comparación con el ancho de la pieza de trabajo.</p>
-<p><strong>11.</strong> Molienda de las principales formas, ranuras y ranuras</p>
-<p>Esta operación de fresado se utiliza para producir formas clave, ranuras y ranuras en la pieza de trabajo.</p>
-<p><strong>12.</strong> Fresado de engranajes</p>
-<p>Es el proceso de fresado que se usa para cortar engranajes en la pieza de trabajo. Esta operación se realiza mediante el uso de fresas formadas llamadas cortadores de engranajes evolventes.</p>
-<p><strong>13.</strong> Fresado helicoidal</p>
-<p>Esta operación de fresado se realiza para producir objetos con diseño helicoidal, como engranajes helicoidales, taladros retorcidos, etc., que se realiza en la periferia de la pieza de trabajo cilíndrica.</p>
-<p><strong>14.</strong> Fresado de levas</p>
-<p>Es un proceso de mecanizado que se utiliza para hacer levas. Las levas se utilizan para abrir y cerrar las válvulas en los motores de combustión interna.</p>
-<p><strong>15.</strong> Fresado de rosca</p>
-<p>Es el proceso de fresado utilizado para cortar roscas en la pieza de trabajo cilíndrica.</p>
+<h2 id="fdm-cómo-funciona">FDM ¿Cómo funciona?</h2>
+<ol>
+<li>
+<p>Primero se carga una bobina de filamento termoplástico en la impresora. Una vez que la boquilla ha alcanzado la temperatura deseada, el filamento se alimenta al cabezal de extrusión y en la boquilla donde se funde.</p>
+</li>
+<li>
+<p>El cabezal de extrusión está unido a un sistema de 3 ejes que le permite moverse en las direcciones X, Y y Z. El material fundido se extruye en hebras delgadas y se deposita capa por capa en lugares predeterminados, donde se enfría y solidifica. A veces, el enfriamiento del material se acelera mediante el uso de ventiladores de enfriamiento conectados al cabezal de extrusión.</p>
+</li>
+<li>
+<p>Para llenar un área, se requieren múltiples pasadas (similar a colorear un rectángulo con un marcador). Cuando se termina una capa, la plataforma de construcción se mueve hacia abajo (o en otras configuraciones de la máquina, el cabezal de extrusión se mueve hacia arriba) y se deposita una nueva capa. Este proceso se repite hasta que se completa la pieza.</p>
+</li>
+</ol>
+<p><img src="/img/fdm/2.png" alt="fdm"></p>
 <p><a href="#top">[Volver Arriba]</a></p>
-<h2 id="fresadora-cnc---imágenes">Fresadora CNC - Imágenes</h2>
-<p>Existen Fresadoras CNC verticales y horizontales:</p>
-<p><img src="/img/cnc-real/fresadoras-cnc.jpg" alt="Fresadora">
+<h2 id="fdm-características">FDM Características</h2>
+<h3 id="parámetros-de-la-impresora">Parámetros de la impresora</h3>
+<p>La mayoría de los sistemas FDM permiten el ajuste de varios parámetros del proceso, incluida la temperatura tanto de la boquilla como de la plataforma de construcción, la velocidad de construcción, la altura de la capa y la velocidad del ventilador de enfriamiento. Por lo general, los establece el operador, por lo que deben ser de poca importancia para el diseñador.</p>
+<p>Lo importante desde la perspectiva de un diseñador es el tamaño de construcción y la altura de la capa:</p>
+<p>El tamaño de construcción disponible de una impresora 3D de escritorio suele ser de 200 x 200 x 200 mm, mientras que para las máquinas industriales puede ser tan grande como 1000 x 1000 x 1000 mm. Si se prefiere una máquina de escritorio (por ejemplo, para reducir el costo), un modelo grande se puede dividir en partes más pequeñas y luego ensamblar.</p>
+<p>La altura de capa típica utilizada en FDM varía entre 50 y 400 micrones y se puede determinar al realizar un pedido. Una altura de capa más pequeña produce piezas más suaves y captura geometrías curvas con mayor precisión, mientras que una altura mayor produce piezas más rápido y a un costo menor. Lo más común es utilizar una altura de capa de 200 micrones. Aquí puede encontrar un artículo sobre el impacto de la altura de la capa en una pieza impresa en 3D.</p>
+<h3 id="pandeo">Pandeo</h3>
+<p>El alabeo es uno de los defectos más comunes en FDM. Cuando el material extruido se enfría durante la solidificación, sus dimensiones disminuyen. Como diferentes secciones de la impresión se enfrían a diferentes velocidades, sus dimensiones también cambian a diferentes velocidades. El enfriamiento diferencial provoca la acumulación de tensiones internas que tiran de la capa subyacente hacia arriba, provocando que se deforme, como se ve en la figura 3. Desde un punto de vista tecnológico, la deformación se puede prevenir mediante un control más cercano de la temperatura del sistema FDM (por ejemplo, de la construcción plataforma y la cámara) y aumentando la adhesión entre la pieza y la plataforma de construcción.</p>
+<h4 id="las-elecciones-del-diseñador-también-pueden-reducir-la-probabilidad-de-deformación">Las elecciones del diseñador también pueden reducir la probabilidad de deformación:</h4>
+<p>Las áreas planas grandes (piense en una caja rectangular) son más propensas a deformarse y deben evitarse cuando sea posible.
+Las características delgadas que sobresalen (piense en las puntas de un tenedor) también son propensas a deformarse. En este caso, la deformación se puede evitar agregando algo de material de sacrificio en el borde de la característica delgada (por ejemplo, un rectángulo de 200 micrones de espesor) para aumentar el área que toca la plataforma de construcción.
+Las esquinas afiladas se deforman con más frecuencia que las formas redondeadas, por lo que agregar redondeos a su diseño es una buena práctica.
+Los diferentes materiales son más susceptibles a la deformación: el ABS es generalmente más sensible a la deformación en comparación con PLA o PETG, debido a su temperatura de transición vítrea más alta y al coeficiente de expansión térmica relativamente alto.</p>
+<p><img src="/img/fdm/3.png" alt="fdm">
 <br>
 <br>
-<img src="/img/cnc-real/fresa1.jpg" alt="Fresadora">
+<img src="/img/fdm/4.jpg" alt="fdm"></p>
+<h3 id="adhesión-de-capa">Adhesión de capa</h3>
+<p>Una buena adherencia entre las capas depositadas es muy importante para una pieza FDM. Cuando el termoplástico fundido se extruye a través de la boquilla, se presiona contra la capa anterior. La alta temperatura y la presión vuelven a fundir la superficie de la capa anterior y permiten la unión de la nueva capa con la parte previamente impresa.</p>
+<p>La fuerza de unión entre las diferentes capas es siempre menor que la fuerza base del material.</p>
+<p>Esto significa que las piezas FDM son inherentemente anisotrópicas: su fuerza en el eje Z es siempre menor que su fuerza en el plano XY. Por esta razón, es importante tener en cuenta la orientación de las piezas al diseñar piezas para FDM.</p>
+<p>Por ejemplo, las piezas de prueba de tracción impresas horizontalmente en ABS con un relleno del 50% se compararon con las piezas de prueba impresas verticalmente y se encontró que tenían una resistencia a la tracción casi 4 veces mayor en la dirección de impresión X, Y en comparación con la dirección Z (17.0 MPa en comparación con 4.4 Mpa) y alargada casi 10 veces más antes de romperse (4,8% frente a 0,5%).</p>
+<p>Además, dado que el material fundido se presiona contra la capa anterior, su forma se deforma a un óvalo. Esto significa que las piezas FDM siempre tendrán una superficie ondulada, incluso para capas de poca altura, y que es posible que las características pequeñas, como pequeños orificios o roscas, deban procesarse después de la impresión.</p>
+<p><img src="/img/fdm/5.png" alt="fdm">
 <br>
 <br>
-<img src="/img/cnc-real/fresa2.jpg" alt="Fresadora"></p>
-<h5 id="componentes">Componentes</h5>
-<p><img src="/img/cnc-real/exp.jpg" alt="Fresadora"></p>
+<img src="/img/fdm/6.jpg" alt="fdm"></p>
 <p><a href="#top">[Volver Arriba]</a></p>
-<h2 id="cosas-interesantes-que-se-pueden-crear-con-un-mecanizado-cnc">Cosas interesantes que se pueden crear con un mecanizado CNC</h2>
-<h5 id="una-mecedora">Una mecedora</h5>
-<p><img src="/img/extra-cnc/mecedora1.jpg" alt="Extras">
+<h3 id="estructura-de-soporte">Estructura de soporte</h3>
+<p>La estructura de soporte es fundamental para la creación de geometrías con voladizos en FDM. El termoplástico fundido no se puede depositar en el aire. Por esta razón, algunas geometrías requieren una estructura de soporte. Puede encontrar un artículo detallado que explica el uso de la estructura de soporte aquí.</p>
+<p>Las superficies impresas en el soporte serán generalmente de menor calidad superficial que el resto de la pieza. Por esta razón, se recomienda que la pieza esté diseñada de tal manera que se minimice la necesidad de soporte.</p>
+<p>El soporte suele estar impreso en el mismo material que la pieza. También existen materiales de soporte que se disuelven en líquido, pero se utilizan principalmente en impresoras 3D FDM industriales o de escritorio de alta gama. La impresión en soportes solubles mejora significativamente la calidad de la superficie de la pieza, pero aumenta el costo total de una impresión, ya que se requiere una máquina especializada (con doble extrusión) y porque el costo del material soluble es relativamente alto.</p>
+<h3 id="espesor-de-relleno-y-carcasa">Espesor de relleno y carcasa</h3>
+<p>Las piezas FDM generalmente no se imprimen sólidas para reducir el tiempo de impresión y ahorrar material. En su lugar, el perímetro exterior se traza utilizando varias pasadas, llamadas caparazón, y el interior se llena con una estructura interna de baja densidad, llamada relleno.</p>
+<p>El relleno y el grosor de la carcasa afectan en gran medida la resistencia de una pieza. Aquí puede encontrar una guía para elegir los mejores parámetros de revestimiento y relleno para la impresión 3D FDM. Para las impresoras FDM de escritorio, la configuración predeterminada es un 25% de densidad de relleno y un grosor de carcasa de 1 mm, lo que representa un buen compromiso entre resistencia y velocidad para impresiones rápidas.</p>
+<p><img src="/img/fdm/7.jpg" alt="fdm"></p>
+<p><a href="#top">[Volver Arriba]</a></p>
+<h2 id="fdm-materiales">FDM Materiales</h2>
+<p>Uno de los puntos fuertes de FDM es la amplia gama de materiales disponibles. Estos pueden variar desde termoplásticos básicos (como PLA y ABS) hasta materiales de ingeniería (como PA, TPU y PETG) y termoplásticos de alto rendimiento (como PEEK y PEI).</p>
+<p><img src="/img/fdm/8.png" alt="fdm"></p>
+<p><a href="#top">[Volver Arriba]</a></p>
+<h2 id="sla-qué-es">SLA ¿Qué es?</h2>
+<p><img src="/img/fdm/9.png" alt="fdm"></p>
+<p>La estereolitografía (SLA) es un proceso de fabricación aditiva que pertenece a la familia de fotopolimerización en tina. En SLA, un objeto se crea curando selectivamente una resina de polímero capa por capa utilizando un rayo láser ultravioleta (UV). Los materiales utilizados en SLA son polímeros termoendurecibles fotosensibles que vienen en forma líquida.</p>
+<p><img src="/img/fdm/10.jpg" alt="fdm">
 <br>
 <br>
-<img src="/img/extra-cnc/mecedora3.jpg" alt="Extras"></p>
-<h4 id="muebles-paramétricos">Muebles paramétricos</h4>
-<p><img src="/img/extra-cnc/mueblesparametricos.jpg" alt="Extras"></p>
-<h4 id="caballo-de-juguete">Caballo de juguete</h4>
-<p><img src="/img/extra-cnc/caballo.jpg" alt="Extras"></p>
-<h4 id="una-silla-de-oficina">Una silla de oficina</h4>
-<p><img src="/img/extra-cnc/oficina.jpg" alt="Extras"></p>
-<h4 id="sillas-plegables">Sillas plegables</h4>
-<p><img src="/img/extra-cnc/plegables1.jpg" alt="Extras">
+SLA es famosa por ser la primera tecnología de impresión 3D: su inventor patentó la tecnología en 1986. Si se necesitan piezas de muy alta precisión o un acabado superficial suave, SLA es la tecnología de impresión 3D más rentable disponible. Los mejores resultados se obtienen cuando el diseñador aprovecha los beneficios y las limitaciones del proceso de fabricación.</p>
+<p>SLA tiene muchas características comunes con el procesamiento de luz directa (DLP), otra tecnología de impresión 3D de fotopolimerización en tina. Por simplicidad, las dos tecnologías se pueden tratar como iguales.</p>
+<p><img src="/img/fdm/11.png" alt="fdm"></p>
+<p><a href="#top">[Volver Arriba]</a></p>
+<h2 id="sla-cómo-funciona">SLA ¿Cómo funciona?</h2>
+<ol>
+<li>
+<p>La plataforma de construcción se coloca primero en el tanque de fotopolímero líquido, a una distancia de la altura de una capa para la superficie del líquido.</p>
+</li>
+<li>
+<p>Luego, un láser UV crea la siguiente capa curando y solidificando selectivamente la resina de fotopolímero. El rayo láser se enfoca en la ruta predeterminada utilizando un conjunto de espejos, llamados galvos. Se escanea toda el área de la sección transversal del modelo, por lo que la pieza producida es completamente sólida.</p>
+</li>
+<li>
+<p>Cuando se termina una capa, la plataforma se mueve a una distancia segura y la cuchilla de la barredora vuelve a revestir la superficie. Luego, el proceso se repite hasta que se completa la pieza.</p>
+</li>
+<li>
+<p>Después de la impresión, la pieza está en un estado verde, sin curar por completo y requiere un procesamiento posterior adicional bajo luz ultravioleta si se requieren propiedades mecánicas y térmicas muy altas.</p>
+</li>
+</ol>
+<p>La resina líquida se solidifica mediante un proceso llamado fotopolimerización: durante la solidificación, las cadenas de carbono monomérico que componen la resina líquida se activan con la luz del láser UV y se solidifican, creando fuertes lazos irrompibles entre sí. El proceso de fotopolimerización es irreversible y no hay forma de convertir las partes SLA de nuevo a su forma líquida: cuando se calientan, se queman en lugar de derretirse. Esto se debe a que los materiales que se producen con SLA están hechos de polímeros termoendurecibles, a diferencia de los termoplásticos que utiliza FDM.</p>
+<p><img src="/img/fdm/12.png" alt="fdm"></p>
+<p><a href="#top">[Volver Arriba]</a></p>
+<h2 id="sla-características">SLA Características</h2>
+<h3 id="parámetros-de-la-impresora-1">Parámetros de la impresora</h3>
+<p>En los sistemas SLA, la mayoría de los parámetros de impresión los fija el fabricante y no se pueden cambiar. Las únicas entradas son la altura de la capa y la orientación de la pieza (esta última determina la ubicación del soporte).</p>
+<p>La altura de capa típica en SLA varía entre 25 y 100 micrones. Las alturas de capa más bajas capturan geometrías curvas con mayor precisión pero aumentan el tiempo de construcción (y el costo) y la probabilidad de una impresión fallida. Una altura de capa de 100 micrones es adecuada para las aplicaciones más comunes.</p>
+<p>El tamaño de construcción es otro parámetro que es importante para el diseñador. El tamaño de construcción depende del tipo de máquina SLA. Hay dos configuraciones principales de la máquina SLA: la orientación de arriba hacia abajo y la orientación de abajo hacia arriba.</p>
+<p>Las impresoras SLA de arriba hacia abajo colocan la fuente láser sobre el tanque y la pieza se construye hacia arriba. La plataforma de construcción comienza en la parte superior de la tina de resina y se mueve hacia abajo después de cada capa.</p>
+<p><img src="/img/fdm/13.png" alt="sla"></p>
+<p>Las impresoras SLA de abajo hacia arriba colocan la fuente de luz debajo del tanque de resina (vea la figura anterior) y la pieza se construye boca abajo. El tanque tiene un fondo transparente con un recubrimiento de silicona que deja pasar la luz del láser pero evita que la resina curada se adhiera a él. Después de cada capa, la resina curada se desprende del fondo del tanque, a medida que la plataforma de construcción se mueve hacia arriba. A esto se le llama el paso de pelado.</p>
+<p><img src="/img/fdm/14.png" alt="sla"></p>
+<p>La orientación de abajo hacia arriba se usa principalmente en impresoras de escritorio, como Formlabs, mientras que la de arriba hacia abajo se usa generalmente en sistemas SLA industriales. Las impresoras SLA ascendentes son más fáciles de fabricar y operar, pero su tamaño de construcción es limitado, ya que las fuerzas aplicadas a la pieza durante el paso de pelado pueden hacer que la impresión falle. Por otro lado, las impresoras de arriba hacia abajo pueden escalar hasta tamaños de construcción muy grandes sin una gran pérdida de precisión. Las capacidades avanzadas de estos sistemas tienen costos más altos.</p>
+<p><img src="/img/fdm/15.jpg" alt="sla">
 <br>
 <br>
-<img src="/img/extra-cnc/plegables2.jpg" alt="Extras"></p>
-<h4 id="silla-paramétrica">Silla paramétrica</h4>
-<p><img src="/img/extra-cnc/sillaparametrica.jpg" alt="Extras"></p>
-<h4 id="silla-y-escritorio-para-niños">Silla y escritorio para niños</h4>
-<p><img src="/img/extra-cnc/sillaescritorio.jpg" alt="Extras"></p>
-<h4 id="muebles-con-formas-originales">Muebles con formas originales</h4>
-<p><img src="/img/extra-cnc/rino.jpg" alt="Extras"></p>
+<img src="/img/fdm/16.jpg" alt="sla"></p>
+<h3 id="estructura-de-soporte-1">Estructura de soporte</h3>
+<p>La estructura de soporte siempre se requiere en SLA. Las estructuras de soporte se imprimen en el mismo material que la pieza y deben retirarse manualmente después de la impresión. La orientación de la pieza determina la ubicación y la cantidad de soporte. Se recomienda que la pieza esté orientada de modo que superficies tan visualmente críticas no entren en contacto con las estructuras de soporte.</p>
+<h4 id="las-impresoras-sla-ascendentes-y-descendentes-utilizan-el-soporte-de-manera-diferente">Las impresoras SLA ascendentes y descendentes utilizan el soporte de manera diferente:</h4>
+<p>En las impresoras SLA de arriba hacia abajo, los requisitos de soporte son similares a los de FDM. Son necesarios para imprimir con precisión voladizos y puentes (el ángulo de voladizo crítico suele ser de 30o). La pieza se puede orientar en cualquier posición y normalmente se imprimen planas, para minimizar la cantidad de soporte y el número total de capas.</p>
+<p>En las impresoras SLA ascendentes, las cosas son más complicadas. Los voladizos y los puentes aún necesitan soporte, pero minimizar el área de la sección transversal de cada capa es el criterio más crucial: las fuerzas aplicadas a la pieza durante el paso de pelado pueden hacer que se desprenda de la plataforma de construcción. Estas fuerzas son proporcionales al área de la sección transversal de cada capa. Por esta razón, las piezas están orientadas en ángulo y la reducción del soporte no es una preocupación principal.</p>
+<p><img src="/img/fdm/17.jpg" alt="sla"></p>
+<h3 id="curling">Curling</h3>
+<p>Uno de los mayores problemas relacionados con la precisión de las piezas producidas mediante SLA es el rizado. El rizado es similar a la deformación en FDM.</p>
+<p>Durante la solidificación / curado, la resina se encoge ligeramente al exponerse a la fuente de luz de la impresora. Cuando la contracción es considerable, se desarrollan grandes tensiones internas entre la nueva capa y el material previamente solidificado, lo que da como resultado el rizado de la pieza.</p>
+<h3 id="adhesión-de-capa-1">Adhesión de capa</h3>
+<p>Las piezas impresas SLA tienen propiedades mecánicas isotrópicas. Esto se debe a que una sola pasada de láser UV no es suficiente para curar completamente la resina líquida. Los pases láser posteriores ayudan a que las capas previamente solidificadas se fusionen en un grado muy alto. De hecho:</p>
+<p>En SLA, el curado continúa incluso después de la finalización del proceso de impresión.</p>
+<p>Para lograr las mejores propiedades mecánicas, las piezas SLA deben curarse posteriormente, colocándolas en una caja de curado bajo luz ultravioleta intensa (y a veces a temperaturas elevadas). Esto mejora enormemente la dureza y la resistencia a la temperatura de la pieza SLA pero la hace más frágil.</p>
+<p>Por ejemplo, las piezas de prueba de piezas impresas en resina transparente estándar utilizando una impresora SLA de escritorio tienen casi 2 veces más resistencia a la tracción después del curado (65 MPa en comparación con 38 MPa) y pueden operar bajo carga a temperaturas más altas (a una temperatura máxima de 58 ° C). comparado con 42oC), pero su alargamiento a la rotura es casi la mitad (6.2% comparado con 12%).</p>
+<p>Dejar la parte al sol también inducirá el curado. La exposición prolongada a la luz ultravioleta tiene un efecto perjudicial en las propiedades físicas y la apariencia de una pieza SLA: pueden curvarse, volverse muy quebradizas y cambiar de color. Por esta razón, se recomienda encarecidamente aplicar una capa de pintura acrílica UV transparente antes de su uso.</p>
+<p><a href="#top">[Volver Arriba]</a></p>
+<h2 id="sla-materiales">SLA Materiales</h2>
+<p><img src="/img/fdm/18.png" alt="sla"></p>
+<p>Los materiales SLA vienen en forma de resina líquida. El precio por litro de resina varía mucho, desde alrededor de 50 dólares por el material estándar hasta 400 dólares por los materiales especiales, como la resina moldeable o dental. Los sistemas industriales ofrecen una gama más amplia de materiales que las impresoras SLA de escritorio, lo que le da al diseñador un control más cercano sobre las propiedades mecánicas de la pieza impresa.</p>
+<p>Los materiales SLA (termoendurecibles) son más frágiles que los materiales producidos con FDM o SLS (termoplásticos) y por esta razón, las piezas SLA no se suelen utilizar para prototipos funcionales que soportarán cargas importantes. Los avances en los materiales pueden cambiar esto en un futuro próximo.</p>
+<p><a href="#top">[Volver Arriba]</a></p>
+<h2 id="cosas-interesantes-que-se-pueden-crear-con-impresión-3d">Cosas interesantes que se pueden crear con impresión 3D</h2>
+<p><img src="/img/3d/1.png" alt="sla">
+<br>
+<br>
+<img src="/img/3d/2.png" alt="sla">
+<br>
+<br>
+<img src="/img/3d/3.png" alt="sla">
+<br>
+<br>
+<img src="/img/3d/4.gif" alt="sla"></p>
 <h3 id="galería">Galería</h3>
 <p>
 <link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
@@ -258,123 +315,46 @@ La siguiente figura muestra un diagrama de bloques de una máquina CNC típica, 
 <div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://isidorafuentes.github.io//img/extra-cnc//caballo.jpg');" >
-				      <img itemprop="thumbnail" src="https://isidorafuentes.github.io//img/extra-cnc//caballo.jpg" alt="Caballo" />
+				    <div class="img" style="background-image: url('https://isidorafuentes.github.io//img/3d//1.png');" >
+				      <img itemprop="thumbnail" src="https://isidorafuentes.github.io//img/3d//1.png" alt="1st" />
 				    </div>
 			      <figcaption>
-		          <p>Caballo</p>
+		          <p>1st</p>
 			      </figcaption>
-				    <a href="https://isidorafuentes.github.io//img/extra-cnc//caballo.jpg" itemprop="contentUrl"></a>
+				    <a href="https://isidorafuentes.github.io//img/3d//1.png" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://isidorafuentes.github.io//img/extra-cnc//mecedora1.jpg');" >
-				      <img itemprop="thumbnail" src="https://isidorafuentes.github.io//img/extra-cnc//mecedora1.jpg" alt="Mecedora1" />
+				    <div class="img" style="background-image: url('https://isidorafuentes.github.io//img/3d//2.png');" >
+				      <img itemprop="thumbnail" src="https://isidorafuentes.github.io//img/3d//2.png" alt="2nd" />
 				    </div>
 			      <figcaption>
-		          <p>Mecedora1</p>
+		          <p>2nd</p>
 			      </figcaption>
-				    <a href="https://isidorafuentes.github.io//img/extra-cnc//mecedora1.jpg" itemprop="contentUrl"></a>
+				    <a href="https://isidorafuentes.github.io//img/3d//2.png" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://isidorafuentes.github.io//img/extra-cnc//mecedora2.jpg');" >
-				      <img itemprop="thumbnail" src="https://isidorafuentes.github.io//img/extra-cnc//mecedora2.jpg" alt="Mecedora2" />
+				    <div class="img" style="background-image: url('https://isidorafuentes.github.io//img/3d//3.png');" >
+				      <img itemprop="thumbnail" src="https://isidorafuentes.github.io//img/3d//3.png" alt="3rd" />
 				    </div>
 			      <figcaption>
-		          <p>Mecedora2</p>
+		          <p>3rd</p>
 			      </figcaption>
-				    <a href="https://isidorafuentes.github.io//img/extra-cnc//mecedora2.jpg" itemprop="contentUrl"></a>
+				    <a href="https://isidorafuentes.github.io//img/3d//3.png" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://isidorafuentes.github.io//img/extra-cnc//mecedora3.jpg');" >
-				      <img itemprop="thumbnail" src="https://isidorafuentes.github.io//img/extra-cnc//mecedora3.jpg" alt="Mecedora3" />
+				    <div class="img" style="background-image: url('https://isidorafuentes.github.io//img/3d//4.gif');" >
+				      <img itemprop="thumbnail" src="https://isidorafuentes.github.io//img/3d//4.gif" alt="4th" />
 				    </div>
 			      <figcaption>
-		          <p>Mecedora3</p>
+		          <p>4th</p>
 			      </figcaption>
-				    <a href="https://isidorafuentes.github.io//img/extra-cnc//mecedora3.jpg" itemprop="contentUrl"></a>
-				  </figure>
-				</div>
-				<div class="box">
-				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://isidorafuentes.github.io//img/extra-cnc//mueblesparametricos.jpg');" >
-				      <img itemprop="thumbnail" src="https://isidorafuentes.github.io//img/extra-cnc//mueblesparametricos.jpg" alt="Mueblesparametricos" />
-				    </div>
-			      <figcaption>
-		          <p>Mueblesparametricos</p>
-			      </figcaption>
-				    <a href="https://isidorafuentes.github.io//img/extra-cnc//mueblesparametricos.jpg" itemprop="contentUrl"></a>
-				  </figure>
-				</div>
-				<div class="box">
-				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://isidorafuentes.github.io//img/extra-cnc//oficina.jpg');" >
-				      <img itemprop="thumbnail" src="https://isidorafuentes.github.io//img/extra-cnc//oficina.jpg" alt="Oficina" />
-				    </div>
-			      <figcaption>
-		          <p>Oficina</p>
-			      </figcaption>
-				    <a href="https://isidorafuentes.github.io//img/extra-cnc//oficina.jpg" itemprop="contentUrl"></a>
-				  </figure>
-				</div>
-				<div class="box">
-				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://isidorafuentes.github.io//img/extra-cnc//plegables1.jpg');" >
-				      <img itemprop="thumbnail" src="https://isidorafuentes.github.io//img/extra-cnc//plegables1.jpg" alt="Plegables1" />
-				    </div>
-			      <figcaption>
-		          <p>Plegables1</p>
-			      </figcaption>
-				    <a href="https://isidorafuentes.github.io//img/extra-cnc//plegables1.jpg" itemprop="contentUrl"></a>
-				  </figure>
-				</div>
-				<div class="box">
-				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://isidorafuentes.github.io//img/extra-cnc//plegables2.jpg');" >
-				      <img itemprop="thumbnail" src="https://isidorafuentes.github.io//img/extra-cnc//plegables2.jpg" alt="Plegables2" />
-				    </div>
-			      <figcaption>
-		          <p>Plegables2</p>
-			      </figcaption>
-				    <a href="https://isidorafuentes.github.io//img/extra-cnc//plegables2.jpg" itemprop="contentUrl"></a>
-				  </figure>
-				</div>
-				<div class="box">
-				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://isidorafuentes.github.io//img/extra-cnc//rino.jpg');" >
-				      <img itemprop="thumbnail" src="https://isidorafuentes.github.io//img/extra-cnc//rino.jpg" alt="Rino" />
-				    </div>
-			      <figcaption>
-		          <p>Rino</p>
-			      </figcaption>
-				    <a href="https://isidorafuentes.github.io//img/extra-cnc//rino.jpg" itemprop="contentUrl"></a>
-				  </figure>
-				</div>
-				<div class="box">
-				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://isidorafuentes.github.io//img/extra-cnc//sillaescritorio.jpg');" >
-				      <img itemprop="thumbnail" src="https://isidorafuentes.github.io//img/extra-cnc//sillaescritorio.jpg" alt="Sillaescritorio" />
-				    </div>
-			      <figcaption>
-		          <p>Sillaescritorio</p>
-			      </figcaption>
-				    <a href="https://isidorafuentes.github.io//img/extra-cnc//sillaescritorio.jpg" itemprop="contentUrl"></a>
-				  </figure>
-				</div>
-				<div class="box">
-				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://isidorafuentes.github.io//img/extra-cnc//sillaparametrica.jpg');" >
-				      <img itemprop="thumbnail" src="https://isidorafuentes.github.io//img/extra-cnc//sillaparametrica.jpg" alt="Sillaparametrica" />
-				    </div>
-			      <figcaption>
-		          <p>Sillaparametrica</p>
-			      </figcaption>
-				    <a href="https://isidorafuentes.github.io//img/extra-cnc//sillaparametrica.jpg" itemprop="contentUrl"></a>
+				    <a href="https://isidorafuentes.github.io//img/3d//4.gif" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 </div>
@@ -439,6 +419,8 @@ La siguiente figura muestra un diagrama de bloques de una máquina CNC típica, 
     </div>
 </div>
 </p>
+<h2 id="bibliografía">Bibliografía</h2>
+<p><a href="https://www.3dhubs.com/">https://www.3dhubs.com/</a></p>
 <p><a href="#top">[Volver Arriba]</a></p>
 <p><img src="/img/fotos_fresia/line.png" alt="Fresadora"></p>
 
